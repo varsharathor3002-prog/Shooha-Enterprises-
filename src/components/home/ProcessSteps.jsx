@@ -12,7 +12,7 @@ const STEPS = [
 
 export default function ProcessSteps() {
   return (
-    <section className="py-20 sm:py-24 bg-white">
+    <section className="py-20 sm:py-24 bg-slate-50">
       <Container className="flex flex-col gap-12">
         <SectionHeading
           eyebrow="Our Process"

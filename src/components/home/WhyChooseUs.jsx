@@ -27,7 +27,7 @@ const REASONS = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-20 sm:py-24 bg-slate-50">
+    <section className="py-20 sm:py-24 bg-white">
       <Container className="flex flex-col gap-12">
         <SectionHeading
           eyebrow="Why Shooha Enterprises"
