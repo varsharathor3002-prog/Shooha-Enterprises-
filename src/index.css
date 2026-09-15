@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Poppins", "Segoe UI", sans-serif;
+  --font-sans: "Inter", "Segoe UI", sans-serif;
+
+  /* Teal / cyan tech palette. Token names (navy-*, brand-*) are kept as-is
+     for stability across components — only the values changed. */
+  --color-navy-950: #03110f;
+  --color-navy-900: #061f1b;
+  --color-navy-800: #0a2e28;
+  --color-navy-700: #0e4139;
+  --color-navy-600: #135b4f;
+  --color-brand-blue: #0f766e;
+  --color-brand-cyan: #22d3ee;
+  --color-brand-yellow: #2dd4bf;
+  --color-brand-yellow-dark: #14b8a6;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #f5faf9;
+    color: #101828;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  /* Dark teal tech background with a subtle circuit grid + glow blobs.
+     All layers live in ONE background-image so they compose correctly —
+     background-image does not merge across separate classes. */
+  .circuit-bg {
+    background-color: #03110f;
+    background-image:
+      linear-gradient(rgba(34, 211, 238, 0.12) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(34, 211, 238, 0.12) 1px, transparent 1px),
+      radial-gradient(circle at 20% 20%, rgba(34, 211, 238, 0.18), transparent 35%),
+      radial-gradient(circle at 80% 0%, rgba(20, 184, 166, 0.35), transparent 45%),
+      linear-gradient(160deg, #03110f 0%, #061f1b 45%, #0a2e28 100%);
+    background-size: 42px 42px, 42px 42px, auto, auto, auto;
+  }
+
+  .text-gradient-yellow {
+    background: linear-gradient(90deg, #5eead4 0%, #2dd4bf 45%, #14b8a6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .card-hover {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 35px -15px rgba(4, 23, 20, 0.35);
+  }
+}
