@@ -7,6 +7,7 @@ import { siteConfig } from "../../data/siteConfig";
 
 const NAV_LINKS = [
   { label: "Home", to: "/" },
+  { label: "Products", to: "/products" },
   { label: "About", to: "/about" },
   { label: "Services", to: "/services" },
   { label: "Gallery", to: "/gallery" },

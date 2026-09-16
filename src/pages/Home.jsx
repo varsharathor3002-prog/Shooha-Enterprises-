@@ -1,7 +1,7 @@
 import Hero from "../components/home/Hero";
 import BrandsStrip from "../components/home/BrandsStrip";
 import ServicesPreview from "../components/home/ServicesPreview";
-import DeviceShowcase from "../components/home/DeviceShowcase";
+import ProductCategories from "../components/home/ProductCategories";
 import WhyChooseUs from "../components/home/WhyChooseUs";
 import ProcessSteps from "../components/home/ProcessSteps";
 import CTASection from "../components/home/CTASection";
@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
       <BrandsStrip />
       <ServicesPreview />
-      <DeviceShowcase />
+      <ProductCategories />
       <WhyChooseUs />
       <ProcessSteps />
       <CTASection />

@@ -1,0 +1,123 @@
+import ac from "../assets/ac.jpg";
+import ac1 from "../assets/ac1.jpg";
+import cctv from "../assets/cctv.jpg";
+import cctv1 from "../assets/cctv1.jpg";
+import tablet from "../assets/tablets.jpg";
+import tablet1 from "../assets/tablets1.jpg";
+import tv from "../assets/tv.jpg";
+import tv1 from "../assets/tv1.jpg";
+import laptop from "../assets/laptop.jpg";
+import laptop2 from "../assets/laptop2.webp";
+
+export const products = [
+  {
+    id: "p0",
+    image: laptop,
+    brand: "Lenovo",
+    title: "Lenovo IdeaPad Slim 3 Ryzen 5",
+    rating: 4.4,
+    reviews: 96,
+    price: 41990,
+    mrp: 49990,
+    tag: "New",
+  },
+  {
+    id: "p0b",
+    image: laptop2,
+    brand: "HP",
+    title: "HP Pavilion 15 Core i5 12th Gen",
+    rating: 4.3,
+    reviews: 158,
+    price: 47990,
+    mrp: 56990,
+    tag: "Best Seller",
+  },
+  {
+    id: "p1",
+    image: ac,
+    brand: "Blue Star",
+    title: "Blue Star 1.5 Ton 5 Star Split AC",
+    rating: 4.4,
+    reviews: 189,
+    price: 36990,
+    mrp: 44990,
+    tag: "Free Installation",
+  },
+  {
+    id: "p2",
+    image: ac1,
+    brand: "Voltas",
+    title: "Voltas 1.5 Ton 3 Star Window AC",
+    rating: 4.2,
+    reviews: 132,
+    price: 27990,
+    mrp: 32990,
+    tag: "Low Running Cost",
+  },
+  {
+    id: "p3",
+    image: cctv,
+    brand: "Hikvision",
+    title: "Hikvision 4-Channel HD CCTV Kit",
+    rating: 4.5,
+    reviews: 96,
+    price: 8999,
+    mrp: 11499,
+    tag: "New",
+  },
+  {
+    id: "p4",
+    image: cctv1,
+    brand: "CP Plus",
+    title: "CP Plus 2MP Dome Camera Combo",
+    rating: 4.3,
+    reviews: 78,
+    price: 6499,
+    mrp: 7999,
+    tag: "Best Seller",
+  },
+  {
+    id: "p5",
+    image: tablet,
+    brand: "Samsung",
+    title: "Samsung Galaxy Tab A9",
+    rating: 4.4,
+    reviews: 215,
+    price: 12999,
+    mrp: 15999,
+    tag: "New",
+  },
+  {
+    id: "p6",
+    image: tablet1,
+    brand: "Lenovo",
+    title: "Lenovo Tab M10 FHD Plus",
+    rating: 4.1,
+    reviews: 64,
+    price: 13990,
+    mrp: 16990,
+    tag: "Budget Pick",
+  },
+  {
+    id: "p7",
+    image: tv,
+    brand: "Samsung",
+    title: 'Samsung 43" Crystal 4K Smart TV',
+    rating: 4.5,
+    reviews: 341,
+    price: 31990,
+    mrp: 38990,
+    tag: "Trending",
+  },
+  {
+    id: "p8",
+    image: tv1,
+    brand: "LG",
+    title: 'LG 50" UHD 4K Smart TV',
+    rating: 4.6,
+    reviews: 267,
+    price: 37990,
+    mrp: 45990,
+    tag: "Top Rated",
+  },
+];

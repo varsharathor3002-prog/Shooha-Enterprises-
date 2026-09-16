@@ -4,17 +4,17 @@
   --font-display: "Poppins", "Segoe UI", sans-serif;
   --font-sans: "Inter", "Segoe UI", sans-serif;
 
-  /* Teal / cyan tech palette. Token names (navy-*, brand-*) are kept as-is
-     for stability across components — only the values changed. */
-  --color-navy-950: #03110f;
-  --color-navy-900: #061f1b;
-  --color-navy-800: #0a2e28;
-  --color-navy-700: #0e4139;
-  --color-navy-600: #135b4f;
-  --color-brand-blue: #0f766e;
-  --color-brand-cyan: #22d3ee;
-  --color-brand-yellow: #2dd4bf;
-  --color-brand-yellow-dark: #14b8a6;
+  /* Classic blue / amber tech palette. Token names (navy-*, brand-*) are kept
+     as-is for stability across components — only the values changed. */
+  --color-navy-950: #0b1120;
+  --color-navy-900: #0f1830;
+  --color-navy-800: #14224a;
+  --color-navy-700: #1b2f66;
+  --color-navy-600: #22407f;
+  --color-brand-blue: #1e3a8a;
+  --color-brand-cyan: #3b82f6;
+  --color-brand-yellow: #f59e0b;
+  --color-brand-yellow-dark: #d97706;
 }
 
 @layer base {
@@ -24,7 +24,7 @@
 
   body {
     font-family: var(--font-sans);
-    background-color: #f5faf9;
+    background-color: #f5f7fb;
     color: #101828;
   }
 
@@ -37,22 +37,22 @@
 }
 
 @layer utilities {
-  /* Dark teal tech background with a subtle circuit grid + glow blobs.
+  /* Dark navy tech background with a subtle circuit grid + glow blobs.
      All layers live in ONE background-image so they compose correctly —
      background-image does not merge across separate classes. */
   .circuit-bg {
-    background-color: #03110f;
+    background-color: #0b1120;
     background-image:
-      linear-gradient(rgba(34, 211, 238, 0.12) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(34, 211, 238, 0.12) 1px, transparent 1px),
-      radial-gradient(circle at 20% 20%, rgba(34, 211, 238, 0.18), transparent 35%),
-      radial-gradient(circle at 80% 0%, rgba(20, 184, 166, 0.35), transparent 45%),
-      linear-gradient(160deg, #03110f 0%, #061f1b 45%, #0a2e28 100%);
+      linear-gradient(rgba(59, 130, 246, 0.12) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(59, 130, 246, 0.12) 1px, transparent 1px),
+      radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.2), transparent 35%),
+      radial-gradient(circle at 80% 0%, rgba(245, 158, 11, 0.25), transparent 45%),
+      linear-gradient(160deg, #0b1120 0%, #0f1830 45%, #14224a 100%);
     background-size: 42px 42px, 42px 42px, auto, auto, auto;
   }
 
   .text-gradient-yellow {
-    background: linear-gradient(90deg, #5eead4 0%, #2dd4bf 45%, #14b8a6 100%);
+    background: linear-gradient(90deg, #fcd34d 0%, #f59e0b 45%, #d97706 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
