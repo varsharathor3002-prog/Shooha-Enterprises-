@@ -1,6 +1,7 @@
 import { FaMicrochip, FaUserClock, FaHandHoldingUsd, FaCertificate } from "react-icons/fa";
 import Container from "../ui/Container";
 import SectionHeading from "../ui/SectionHeading";
+import { siteConfig } from "../../data/siteConfig";
 
 const REASONS = [
   {
@@ -30,7 +31,7 @@ export default function WhyChooseUs() {
     <section className="py-20 sm:py-24 bg-white">
       <Container className="flex flex-col gap-12">
         <SectionHeading
-          eyebrow="Why Shooha Enterprises"
+          eyebrow={`Why ${siteConfig.name}`}
           title="Repair Service You Can Actually Trust"
           subtitle="Years of hands-on troubleshooting experience, applied to every device that comes through our door."
         />

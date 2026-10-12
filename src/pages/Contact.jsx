@@ -90,7 +90,7 @@ export default function Contact() {
             <div className="lg:col-span-2 flex flex-col gap-6">
               <div className="rounded-2xl overflow-hidden border border-slate-100 shadow-sm h-64 lg:h-[calc(100%-7rem)]">
                 <iframe
-                  title="Shooha Enterprises Location"
+                  title={`${siteConfig.name} Location`}
                   src={mapSrc}
                   className="w-full h-full border-0"
                   loading="lazy"

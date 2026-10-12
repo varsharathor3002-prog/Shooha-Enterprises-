@@ -1,7 +1,7 @@
 // Central place for all business details.
 // Update details here and they will reflect across the entire site.
 export const siteConfig = {
-  name: "Shooha Enterprises",
+  name: "SHOBHA Enterprises Sales and Services",
   owner: "Santaram Kurade",
   tagline: "Chip Level Repair For Laptop, Desktop, Printer & LCD/LED Monitor",
   shortTagline: "Trusted Chip-Level Repair Experts",

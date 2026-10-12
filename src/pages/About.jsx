@@ -31,7 +31,7 @@ export default function About() {
       <PageHeader
         eyebrow="About Us"
         title="Who We Are"
-        subtitle="Get to know the team behind Shooha Enterprises and what drives us to fix it right, every time."
+        subtitle={`Get to know the team behind ${siteConfig.name} and what drives us to fix it right, every time.`}
         crumb="About"
       />
 

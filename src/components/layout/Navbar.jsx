@@ -47,10 +47,10 @@ export default function Navbar() {
           </span>
           <span className="leading-tight">
             <span className="block text-lg sm:text-xl font-extrabold text-navy-950 tracking-tight">
-              Shooha Enterprises
+              SHOBHA Enterprises
             </span>
             <span className="hidden sm:block text-[11px] font-semibold uppercase tracking-wider text-brand-blue">
-              Chip Level Repair Experts
+              Sales and Services
             </span>
           </span>
         </NavLink>
